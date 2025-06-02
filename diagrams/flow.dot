@@ -1,0 +1,15 @@
+digraph Vulnerability_Management_Flow_PowerPoint {
+    rankdir=LR; // Left to Right flow
+    node [shape=rectangle, style=filled, color=lightblue, fontsize=14, width=2.5, height=1];
+
+    Discover [label="Asset Discovery"];
+    Scan [label="Vulnerability Scan\n(OpenVAS)"];
+    Collect [label="Collect Findings"];
+    Ingest [label="Ingest to Splunk"];
+    Visualize [label="Dashboards & Alerts"];
+    Analyze [label="Manual Analysis"];
+    Report [label="Write Recommendations"];
+
+    Discover -> Scan -> Collect -> Ingest -> Visualize -> Analyze -> Report;
+}
+

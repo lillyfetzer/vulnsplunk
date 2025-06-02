@@ -1,0 +1,20 @@
+digraph Vulnerability_Management_Architecture_Updated {
+    rankdir=TB;
+    node [shape=box, style=filled, color=lightgrey, fontsize=14, width=2.5, height=1];
+
+    OpenVAS [label="OpenVAS Scanner\n(Metasploitable2 Target)"];
+    Findings [label="Initial Scan Results\n(XML/CSV Export)"];
+    Enrichment [label="Threat Intelligence Enrichment\n(CVE Lookup & Tagging)"];
+    EnhancedFindings [label="Enriched Vulnerability Data\n(Threat-Tagged Reports)"];
+    SplunkIngest [label="Splunk Ingestion"];
+    Dashboards [label="Splunk Dashboards\n(Prioritized Visualizations)"];
+    AnalystAction [label="Analyst Response\n(Prioritized Recommendations)"];
+
+    OpenVAS -> Findings;
+    Findings -> Enrichment;
+    Enrichment -> EnhancedFindings;
+    EnhancedFindings -> SplunkIngest;
+    SplunkIngest -> Dashboards;
+    Dashboards -> AnalystAction;
+}
+
