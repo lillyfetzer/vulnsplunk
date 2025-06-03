@@ -4,25 +4,7 @@ Anonymous FTP Login Reporting,192.168.1.198,21/tcp,Medium,6.4,80,"It was possibl
 anonymous:anonymous@example.com
 ftp:anonymous@example.com","If you do not want to share files, you should disable anonymous
   logins.",CVE-1999-0497,No,0,No,6.4,Medium
-Apache HTTP Server Detection Consolidation,192.168.1.198,general/tcp,Log,0,80,"Detected Apache HTTP Server
-
-Version:       2.2.8
-Location:      80/tcp
-CPE:           cpe:/a:apache:http_server:2.2.8
-
-Concluded from version/product identification result:
-Server: Apache/2.2.8 (Ubuntu) DAV/2",,,No,0,No,0,None
 Apache HTTP Server 'httpOnly' Cookie Information Disclosure Vulnerability,192.168.1.198,80/tcp,Medium,4.3,99,,Update to Apache HTTP Server version 2.2.22 or later.,CVE-2012-0053,No,1,No,5.3,Low
-,,,,,,,,,No,0,No,0,None
-Apache JServ Protocol (AJP) v1.3 Detection,192.168.1.198,8009/tcp,Log,0,80,A service supporting the Apache JServ Protocol (AJP) v1.3 seems to be running on this port.,,,No,0,No,0,None
-Apache Struts Detection Consolidation,192.168.1.198,general/tcp,Log,0,80,"Detected Apache Struts
-
-Version:       unknown
-Location:      /admin
-CPE:           cpe:/a:apache:struts
-
-Concluded from version/product identification location:
-http://192.168.1.198:8180/admin/docs/index.html",,,No,0,No,0,None
 Apache Tomcat AJP RCE Vulnerability (Ghostcat),192.168.1.198,8009/tcp,High,9.8,99,"It was possible to read the file ""/WEB-INF/web.xml"" through the AJP connector.
 
 Result:
@@ -245,27 +227,11 @@ AB 8\x0004 Ã\x0088 \x0002OK  \x0001 \x000CContent-Type  \x001Ctext/html;charset
                <li><b><a href=""mailto:users@tomcat.apache.org"">users@tomc","Update Apache Tomcat to version 7.0.100, 8.5.51, 9.0.31 or later. For other products
   using Tomcat please contact the vendor for more information on fixed versions.",CVE-2020-1938,Yes,20,No,24.8,Critical
 Apache Tomcat 'cal2.jsp' XSS Vulnerability - Active Check,192.168.1.198,8180/tcp,Medium,4.3,70,Vulnerable URL: http://192.168.1.198:8180/jsp-examples/cal/cal2.jsp?time=%74%65%73%74%3C%73%63%72%69%70%74%3E%61%6C%65%72%74%28%22%61%74%74%61%63%6B%22%29%3B%3C%2F%73%63%72%69%70%74%3E,"Update to version 4.1.40, 5.5.28, 6.0.20 or later.",CVE-2009-0781,No,0,No,4.3,Low
-,,,,,,,,,No,0,No,0,None
-Apache Tomcat Detection Consolidation,192.168.1.198,general/tcp,Log,0,80,"Detected Apache Tomcat
-
-Version:       5.5.25
-Location:      8180/tcp
-CPE:           cpe:/a:apache:tomcat:5.5.25
-
-Concluded from version/product identification result:
-Tomcat Manager Application""
-
-Concluded from version/product identification location:
-http://192.168.1.198:8180/tomcat-docs/changelog.html
-http://192.168.1.198:8180/host-manager/html
-http://192.168.1.198:8180/manager/html
-http://192.168.1.198:8180/manager/status",,,No,0,No,0,None
 Apache Tomcat Manager/Host Manager/Server Status Default/Hardcoded Credentials (HTTP),192.168.1.198,8180/tcp,High,10,98,"It was possible to login into the Tomcat Host Manager at http://192.168.1.198:8180/host-manager/html using user ""tomcat"" with password ""tomcat""
 
 It was possible to login into the Tomcat Manager at http://192.168.1.198:8180/manager/html using user ""tomcat"" with password ""tomcat""
 
 It was possible to login into the Tomcat Server Status at http://192.168.1.198:8180/manager/status using user ""tomcat"" with password ""tomcat""",Change the password to a strong one or remove the user from tomcat-users.xml.,"CVE-2010-4094, CVE-2009-3548, CVE-2009-4189, CVE-2009-3099, CVE-2009-3843, CVE-2009-4188, CVE-2010-0557",No,0,No,10,Medium
-,,,,,,,,,No,0,No,0,None
 awiki <= 20100125 Multiple LFI Vulnerabilities - Active Check,192.168.1.198,80/tcp,Medium,5,99,Vulnerable URL: http://192.168.1.198/mutillidae/index.php?page=/etc/passwd,"No known solution was made available for at least one year
   since the disclosure of this vulnerability. Likely none will be provided anymore. General
   solution options are to upgrade to a newer release, disable respective features, remove the

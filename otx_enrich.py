@@ -8,7 +8,7 @@ load_dotenv()
 OTX_API_KEY = os.getenv("OTX_API_KEY")
 
 # Load local scan results
-df = pd.read_csv("gvm_results.csv")  # change if needed
+df = pd.read_csv("gvm_results.csv")
 
 # Load CISA KEV from JSON
 kev_url = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
