@@ -88,5 +88,5 @@ def classify_threat(score):
 df['Threat_Level'] = df['Threat_Aware_Score'].apply(classify_threat)
 
 # Save final enriched output
-df.to_csv("threat_enriched_output.csv", index=False)
-print("[+] Enrichment complete. Output: threat_enriched_output.csv")
+df.to_csv("threat_enriched_output_demo.csv", index=False)
+print("[+] Enrichment complete. Output: threat_enriched_output_demo.csv")
